@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Admin;
+namespace App\Model\Akademik;
 
-require_once 'Pegawai.php';
+use App\Model\Akademik\Pegawai;
 
 class Dosen extends Pegawai
 {
-    public $nidn;
+    private int $nidn;
 
     public function __construct($nip, $nama, $no_hp, $alamat, $nidn) 
     {
